@@ -25,8 +25,8 @@ Cat & Cat::operator=(const Cat & other)
 
 Cat::~Cat()
 {
-	std::cout << "Cat : destructor called\n";
 	delete brain_;
+	std::cout << "Cat : destructor called\n";
 }
 
 void	Cat::makeSound() const
@@ -42,4 +42,9 @@ void Cat::add_idea(const std::string &new_idea)
 void Cat::show_ideas() const
 {
     this->brain_->express_ideas();
+}
+
+void Cat::remove_idea()
+{
+    this->brain_->remove_idea();
 }

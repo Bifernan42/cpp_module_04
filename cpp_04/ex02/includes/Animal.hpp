@@ -11,6 +11,7 @@ class Animal
 		Animal(std::string);
 		Animal(const Animal &);
 		Animal & operator=(const Animal &);
+		//making the Animal destructor virtual ensures polymorphism to work properly by allowing the right chaining in destructor calls
 		virtual ~Animal();
 		virtual void makeSound() const = 0;
 		std::string getType(void) const;
