@@ -25,11 +25,27 @@ Dog & Dog::operator=(const Dog & other)
 
 Dog::~Dog()
 {
-	std::cout << "Dog : destructor called\n";
 	delete brain_;
+	std::cout << "Dog : destructor called\n";
 }
 
 void	Dog::makeSound() const
 {
 	std::cout << "Dog : *woof*\n";
+}
+
+void Dog::remove_idea()
+{
+    this->brain_->remove_idea();
+}
+
+
+void Dog::add_idea(const std::string &new_idea)
+{
+    this->brain_->add_idea(new_idea);
+}
+
+void Dog::show_ideas() const
+{
+    this->brain_->express_ideas();
 }

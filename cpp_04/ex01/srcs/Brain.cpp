@@ -53,3 +53,15 @@ void Brain::express_ideas() const
         std::cout << "Brain : " << "* " << ideas[i] << " *" << std::endl;
     }
 }
+
+void Brain::remove_idea()
+{
+    if (ideas_num > 0)
+    {
+        ideas[ideas_num - 1].clear();
+        ideas_num--;
+    }
+    else {
+        std::cout << "Brain : no ideas to be removed !\n";
+    }
+}

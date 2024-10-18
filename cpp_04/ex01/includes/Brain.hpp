@@ -14,6 +14,7 @@ class Brain
 		~Brain();
 		void add_idea(const std::string &);
 		void express_ideas() const;
+		void remove_idea();
 };
 
 #endif
