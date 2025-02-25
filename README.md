@@ -1,7 +1,6 @@
 # Fifth C++ Assignment  
 
-## Concepts:  
-[Subtype Polymorphism, Abstract Classes, Interfaces, Deep Copying]  
+## Concepts: [Subtype Polymorphism, Abstract Classes, Interfaces, Deep Copying]  
 
 In this fifth assignment, we had to:  
 - Implement **subtype polymorphism** by creating an `Animal` class and derived classes like `Dog` and `Cat`  
